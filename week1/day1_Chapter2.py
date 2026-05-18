@@ -14,6 +14,6 @@
 #done on python interpreator simple value predictions of the expressions
 
 #------------Exercise 5 for chapter 2--------------
-celsius = input ("Enter temp in celsius: ")
-fahrenheit = (float(celsius)) + 32
-print("that converts to",fahrenheit,"fahrenheit")
+#celsius = input ("Enter temp in celsius: ")
+#fahrenheit = (float(celsius)) + 32
+#print("that converts to",fahrenheit,"fahrenheit")
