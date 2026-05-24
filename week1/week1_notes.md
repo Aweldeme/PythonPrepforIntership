@@ -12,3 +12,7 @@ CH4
 Function return preferred instead of printing
 Correct use of try except, exception handling
 parameter heavy instead of outside variables (Functions)
+
+-------------day 4 reflection notes--------------
+CH5
+None(empty value) is a good way to initialize variables before loop declaration to give user more freedom. use the comparison operator 'is' for None values for convention. Encourage meaningful use of try block during type conversions
