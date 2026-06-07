@@ -9,8 +9,8 @@
 # result = count(word,letter)
 # print(result)
 # print("banana".count("a"))
-str = "X-DSPAM-Confidence: 0.8475"
-place = str.find(":")
-target = str[place+2:]
-answer = float(target)
-print(answer)
+# str = "X-DSPAM-Confidence: 0.8475"
+# place = str.find(":")
+# target = str[place+2:]
+# answer = float(target)
+# print(answer)
