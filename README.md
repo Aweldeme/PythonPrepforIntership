@@ -72,5 +72,37 @@
   }
 }
 -------------------
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 200,
+  "width": 240,
+  "formatter": {
+    "elmType": "div",
+    "style": {
+      "padding": "16px",
+      "margin": "8px",
+      "border-radius": "10px",
+      "box-shadow": "0 2px 6px rgba(0,0,0,0.15)",
+      "background-color": "white"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": { "font-size": "16px", "font-weight": "600", "color": "#0b3d66" },
+        "txtContent": "=[$Title] + ' ' + [$LastName]"
+      },
+      {
+        "elmType": "div",
+        "style": { "font-size": "13px", "color": "#444" },
+        "txtContent": "=[$JobTitle]"
+      },
+      {
+        "elmType": "div",
+        "style": { "font-size": "12px", "color": "#777" },
+        "txtContent": "=[$Email]"
+      }
+    ]
+  }
+}
 
 
