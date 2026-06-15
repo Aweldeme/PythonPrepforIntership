@@ -312,3 +312,4 @@
     ]
   }
 }
+----Stackable functionality for chats and calls------------
