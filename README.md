@@ -1,4 +1,4 @@
-{
+no{
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
   "height": 320,
   "width": 260,
@@ -74,11 +74,14 @@
 -------------------
 {
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
-  "height": 200,
+  "height": 220,
   "width": 240,
   "formatter": {
     "elmType": "div",
     "style": {
+      "display": "flex",
+      "flex-direction": "column",
+      "align-items": "center",
       "padding": "16px",
       "margin": "8px",
       "border-radius": "10px",
@@ -99,7 +102,19 @@
       {
         "elmType": "div",
         "style": { "font-size": "12px", "color": "#777" },
+        "txtContent": "=[$Department] + ' • ' + [$Location]"
+      },
+      {
+        "elmType": "a",
+        "attributes": { "href": "=if([$Email] != '', 'mailto:' + [$Email], '')" },
+        "style": { "font-size": "12px", "color": "#0b3d66", "text-decoration": "none" },
         "txtContent": "=[$Email]"
+      },
+      {
+        "elmType": "a",
+        "attributes": { "href": "=if([$Telephone] != '', 'tel:' + [$Telephone], '')" },
+        "style": { "font-size": "12px", "color": "#444", "text-decoration": "none" },
+        "txtContent": "=[$Telephone]"
       }
     ]
   }
