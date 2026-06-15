@@ -72,5 +72,73 @@ no{
   }
 }
 -------------------
-test
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 300,
+  "width": 240,
+  "hideSelection": true,
+  "formatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "flex-direction": "column",
+      "align-items": "center",
+      "padding": "16px",
+      "margin": "8px",
+      "border-radius": "10px",
+      "box-shadow": "0 2px 6px rgba(0,0,0,0.15)",
+      "background-color": "white"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "84px",
+          "height": "84px",
+          "border-radius": "50%",
+          "background-size": "cover",
+          "background-position": "center",
+          "background-image": "=if([$field_8] != '', 'url(' + [$field_8] + ')', '')",
+          "background-color": "=if([$field_8] != '', 'transparent', '#0b3d66')",
+          "display": "flex",
+          "align-items": "center",
+          "justify-content": "center",
+          "color": "white",
+          "font-size": "26px",
+          "font-weight": "600",
+          "margin-bottom": "10px"
+        },
+        "txtContent": "=if([$field_8] != '', '', substring([$Title], 0, 1) + substring([$field_1], 0, 1))"
+      },
+      {
+        "elmType": "div",
+        "style": { "font-size": "16px", "font-weight": "600", "color": "#0b3d66", "text-align": "center" },
+        "txtContent": "=[$Title] + ' ' + [$field_1]"
+      },
+      {
+        "elmType": "div",
+        "style": { "font-size": "13px", "color": "#444", "text-align": "center", "margin-top": "2px" },
+        "txtContent": "=[$field_3]"
+      },
+      {
+        "elmType": "div",
+        "style": { "font-size": "12px", "color": "#777", "text-align": "center", "margin-bottom": "8px" },
+        "txtContent": "=[$field_2] + ' • ' + [$field_7]"
+      },
+      {
+        "elmType": "a",
+        "attributes": { "href": "=if([$field_4] != '', 'mailto:' + [$field_4], '')", "target": "_blank" },
+        "style": { "font-size": "12px", "color": "#0b3d66", "text-decoration": "none", "margin-bottom": "2px" },
+        "txtContent": "=[$field_4]"
+      },
+      {
+        "elmType": "a",
+        "attributes": { "href": "=if([$field_5] != '', 'tel:' + [$field_5], '')" },
+        "style": { "font-size": "12px", "color": "#444", "text-decoration": "none" },
+        "txtContent": "=[$field_5]"
+      }
+    ]
+  }
+}
+
 
