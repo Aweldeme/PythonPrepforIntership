@@ -420,4 +420,142 @@
     ]
   }
 }
+------testing logos------
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
+  "height": 340,
+  "width": 240,
+  "hideSelection": true,
+  "formatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "flex-direction": "column",
+      "align-items": "center",
+      "padding": "0",
+      "margin": "8px",
+      "border-radius": "10px",
+      "overflow": "hidden",
+      "box-shadow": "0 2px 8px rgba(0,0,0,0.18)",
+      "background-color": "white"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "width": "100%",
+          "height": "96px",
+          "flex-shrink": "0",
+          "display": "flex",
+          "align-items": "center",
+          "justify-content": "center",
+          "background-color": "=if(indexOf('|Retail|Deposit Operations|Deposit Ops|', '|' + [$field_2] + '|') > -1, '#1b3a6b', if(indexOf('|Mortgage|Loan Operations|Loans|Credit|', '|' + [$field_2] + '|') > -1, '#0f8a7e', if([$field_2] == 'Business Banking', '#b8742a', if(indexOf('|Accounting|Human Resources|Compliance|IT|Operations|Marketing|Facilities|Nashwauk Downtown|', '|' + [$field_2] + '|') > -1, '#6a4c93', '#5b6b7d'))))"
+        },
+        "children": [
+          {
+            "elmType": "img",
+            "attributes": { "src": "=[$field_8]" },
+            "style": {
+              "display": "=if([$field_8] != '', 'block', 'none')",
+              "width": "72px", "height": "72px", "border-radius": "50%", "object-fit": "cover", "border": "3px solid white"
+            }
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "display": "=if([$field_8] != '', 'none', 'flex')",
+              "width": "72px", "height": "72px", "border-radius": "50%",
+              "background-color": "rgba(255,255,255,0.25)", "border": "3px solid white",
+              "align-items": "center", "justify-content": "center", "color": "white", "font-size": "24px", "font-weight": "700"
+            },
+            "txtContent": "=substring([$Title], 0, 1) + substring([$field_1], 0, 1)"
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": { "display": "flex", "flex-direction": "column", "align-items": "center", "padding": "14px", "width": "100%", "box-sizing": "border-box" },
+        "children": [
+          {
+            "elmType": "div",
+            "style": { "font-size": "16px", "font-weight": "600", "color": "#1b3a6b", "text-align": "center" },
+            "txtContent": "=[$Title] + ' ' + [$field_1]"
+          },
+          {
+            "elmType": "div",
+            "style": { "font-size": "13px", "color": "#444", "text-align": "center", "margin-top": "2px" },
+            "txtContent": "=[$field_3]"
+          },
+          {
+            "elmType": "div",
+            "style": { "font-size": "12px", "color": "#777", "text-align": "center", "margin-bottom": "12px" },
+            "txtContent": "=[$field_2] + ' • ' + [$field_7]"
+          },
+          {
+            "elmType": "div",
+            "style": { "display": "flex", "flex-direction": "row", "gap": "10px", "justify-content": "center" },
+            "children": [
+              {
+                "elmType": "a",
+                "attributes": {
+                  "href": "='https://teams.microsoft.com/l/chat/0/0?users=' + [$field_4]",
+                  "target": "_blank",
+                  "title": "Chat on Teams"
+                },
+                "style": {
+                  "width": "38px", "height": "38px", "border-radius": "50%", "background-color": "#4b53bc",
+                  "display": "flex", "align-items": "center", "justify-content": "center", "text-decoration": "none", "cursor": "pointer"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": { "iconName": "Chat" },
+                    "style": { "color": "white", "font-size": "17px" }
+                  }
+                ]
+              },
+              {
+                "elmType": "a",
+                "attributes": {
+                  "href": "='https://teams.microsoft.com/l/call/0/0?users=' + [$field_4]",
+                  "target": "_blank",
+                  "title": "Call on Teams"
+                },
+                "style": {
+                  "width": "38px", "height": "38px", "border-radius": "50%", "background-color": "#4b53bc",
+                  "display": "flex", "align-items": "center", "justify-content": "center", "text-decoration": "none", "cursor": "pointer"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": { "iconName": "Phone" },
+                    "style": { "color": "white", "font-size": "17px" }
+                  }
+                ]
+              },
+              {
+                "elmType": "a",
+                "attributes": {
+                  "href": "=if([$field_4] != '', 'mailto:' + [$field_4], '')",
+                  "title": "Email on Outlook"
+                },
+                "style": {
+                  "width": "38px", "height": "38px", "border-radius": "50%", "background-color": "#0072c6",
+                  "display": "flex", "align-items": "center", "justify-content": "center", "text-decoration": "none", "cursor": "pointer"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": { "iconName": "Mail" },
+                    "style": { "color": "white", "font-size": "17px" }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
 
