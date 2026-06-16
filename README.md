@@ -558,4 +558,23 @@
     ]
   }
 }
+--
+Here’s the version with quick directory context up front:
 
+Subject: Access to deploy PnP Modern Search
+
+Hi [IT contact],
+
+I’ve been building an employee directory in SharePoint on the Home site — a searchable page with photo contact cards pulling from the daily employee data. Danielle and leadership approved adding on-page search and Teams contact cards to it, using a tool called PnP Modern Search, a widely-used open-source web part from the Microsoft 365 PnP community.
+
+Why it’s needed: SharePoint’s built-in card formatting can’t add a working search box or native Teams profile cards — those require a real web part, which must be deployed to an app catalog first.
+
+I have site-admin but not tenant SharePoint admin, so I can’t reach the tenant catalog. Could you either:
+
+a) Upload the package (.sppkg) to the tenant app catalog via the SharePoint admin center (More features → Apps → App Catalog → upload + “Enable for all sites”), or
+b) Enable a site collection app catalog on the Home site so I can deploy it myself.
+
+I can grab the official package and handle all the configuration — just need it in a catalog I can reach. It’s community-maintained rather than Microsoft-supported, so worth a quick review before approving.
+
+Thanks!
+Amanuel
