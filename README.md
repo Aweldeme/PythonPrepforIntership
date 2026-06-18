@@ -578,24 +578,21 @@ I can grab the official package and handle all the configuration — just need i
 
 Thanks!
 Amanuel
-Got it, and the roster being done actually makes your job easier. I dropped the “ask who’s on the team” step, and reframed the per-person part around the names you already have on the page, so you just walk down the list. Here’s your cheat sheet.
+Here’s the fuller version, walking the page top to bottom so you can point at each part of the example, describe what it is, and ask for its content in the same breath.
 
 IT PAGE — MEETING CHEAT SHEET (Kerry, 2:30)
 
 	1.	Open
-“Thanks for the time, Kerry. We’re building a Meet the Teams section on the intranet so new hires can quickly see who each department is and what they do. I’ve got a few things I want to walk through for the IT page and what I’ll need from you to build it.”
-	2.	Show an example page
-Pull up one of your screenshots (HR, Accounting, or Card Services).
-“Here’s what these pages look like: a short intro about the team, a profile for each person, the best ways to contact you, and the main ways the department supports the bank.”
-	3.	What I need from you
-(Your team members are already on the page from Paylocity, so this is the content around them. Everything below is still blank template.)
-	•	A short 1 to 2 paragraph overview of what IT does, written for a brand-new hire in any role.
-	•	For each person already on the page, one line on what they primarily handle, 255 characters or less. You can read the names off the page and go one by one. Example: “[Name] is the primary contact for [X].”
-	•	The best ways to contact the IT team: a Teams group, an email, a phone or extension.
-	•	5 to 7 bullets on what IT specifically supports that other departments don’t.
-	4.	Deadline
-“Could you get that back to me by [Friday, June 26 or a date about 1 to 3 weeks out]? I’ll also send you an email listing exactly what I need, so you have it in writing.”
-	5.	Next steps
-“Once I have your info, I’ll build the page, then send it to you to review and approve before it goes live on The Lobby.”
-	6.	Close
-Thank them. “I’ll send that recap email today.”
+“Thanks for the time, Kerry. We’re building a Meet the Teams section on the intranet so new hires can quickly see who each department is and what they do. I want to walk you through what the IT page will include and the few things I’ll need from you to build it out.”
+	2.	Walk the example page, top to bottom
+Pull up one of your screenshots (HR, Accounting, or Card Services) and point at each section as you go.
+Intro (top of the page): “At the very top there’s a short intro, one or two paragraphs, that tells a brand-new hire what IT does day to day and when they’d reach out to you. That’s the overview I’ll need from you, written plainly for someone with zero context, not technical.”
+Team members: “Below that, each person on your team gets their own profile. I’ve already pulled your team in from Paylocity, so the names and photos are in place. What I need is one line per person on what they’re the go-to for, 255 characters or less, something like ‘so-and-so is the primary contact for X.’ If you’ve got a few minutes we can go right down the list now, or you can send them to me after.”
+Best ways to contact the team: “Then there’s a ‘best ways to contact us’ section, usually three options: a Teams message or group, an email group, and a number or extension to call. Just tell me which ones you want listed so people land in the right place instead of guessing.”
+How IT supports the bank: “And at the bottom is a list of the main ways IT supports the bank and its clients, five to seven bullets, specifically the things your team handles that other departments don’t. It’s not meant to be every single thing, just the key ones a new hire should know to come to you for.”
+	3.	Set the deadline
+“To keep it moving, could you get that content back to me by [Friday, June 26, or a date about 1 to 3 weeks out]? I’ll also send you an email today listing exactly what I need, so you’ve got it all in writing to work from.”
+	4.	Next steps
+“Once I have your info, I’ll build the page out, then send it back to you to review. Nothing goes live until you’ve checked it and signed off, and then it gets released to The Lobby.”
+	5.	Close
+Thank them, confirm the deadline you landed on, and let them know the recap email is coming today.
