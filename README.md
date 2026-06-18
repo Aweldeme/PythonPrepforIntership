@@ -578,3 +578,24 @@ I can grab the official package and handle all the configuration — just need i
 
 Thanks!
 Amanuel
+Got it, and the roster being done actually makes your job easier. I dropped the “ask who’s on the team” step, and reframed the per-person part around the names you already have on the page, so you just walk down the list. Here’s your cheat sheet.
+
+IT PAGE — MEETING CHEAT SHEET (Kerry, 2:30)
+
+	1.	Open
+“Thanks for the time, Kerry. We’re building a Meet the Teams section on the intranet so new hires can quickly see who each department is and what they do. I’ve got a few things I want to walk through for the IT page and what I’ll need from you to build it.”
+	2.	Show an example page
+Pull up one of your screenshots (HR, Accounting, or Card Services).
+“Here’s what these pages look like: a short intro about the team, a profile for each person, the best ways to contact you, and the main ways the department supports the bank.”
+	3.	What I need from you
+(Your team members are already on the page from Paylocity, so this is the content around them. Everything below is still blank template.)
+	•	A short 1 to 2 paragraph overview of what IT does, written for a brand-new hire in any role.
+	•	For each person already on the page, one line on what they primarily handle, 255 characters or less. You can read the names off the page and go one by one. Example: “[Name] is the primary contact for [X].”
+	•	The best ways to contact the IT team: a Teams group, an email, a phone or extension.
+	•	5 to 7 bullets on what IT specifically supports that other departments don’t.
+	4.	Deadline
+“Could you get that back to me by [Friday, June 26 or a date about 1 to 3 weeks out]? I’ll also send you an email listing exactly what I need, so you have it in writing.”
+	5.	Next steps
+“Once I have your info, I’ll build the page, then send it to you to review and approve before it goes live on The Lobby.”
+	6.	Close
+Thank them. “I’ll send that recap email today.”
