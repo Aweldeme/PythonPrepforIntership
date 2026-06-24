@@ -423,7 +423,7 @@
 ------testing logos------
 {
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
-  "height": 340,
+  "height": 280,
   "width": 240,
   "hideSelection": true,
   "formatter": {
