@@ -560,7 +560,7 @@
 }
 ------Html handlebar version-----
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  {{#each items}}
+  {{#each data.items}}
   <div style="border:1px solid #ccc; border-radius:8px; padding:12px; width:220px;">
     <div style="font-weight:600;">{{Title}} {{RefinableString01}}</div>
     <div>{{RefinableString03}}</div>
@@ -569,5 +569,6 @@
   </div>
   {{/each}}
 </div>
+
 
 
