@@ -558,7 +558,7 @@
     ]
   }
 }
-------Html handlebar version-----
+------Html handlebar skeleton version-----
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   {{#each data.items}}
   <div style="border:1px solid #ccc; border-radius:8px; padding:12px; width:220px;">
@@ -566,6 +566,42 @@
     <div>{{RefinableString03}}</div>
     <div>{{RefinableString02}} &bull; {{RefinableString07}}</div>
     <div style="font-size:12px; color:#666;">{{RefinableString04}}</div>
+  </div>
+  {{/each}}
+</div>
+---------Handlebar with css styling----
+<style>
+  .dirGrid { display:flex; flex-wrap:wrap; gap:16px; }
+  .dirCard { width:240px; border:1px solid #e1e1e1; border-radius:10px; overflow:hidden; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.08); font-family:'Segoe UI',sans-serif; }
+  .dirBand { height:56px; background:#1b3a6b; position:relative; }
+  .dirAvatar { width:72px; height:72px; border-radius:50%; border:3px solid #fff; position:absolute; left:50%; top:20px; transform:translateX(-50%); object-fit:cover; background:#1b3a6b; color:#fff; font-size:24px; font-weight:600; display:flex; align-items:center; justify-content:center; }
+  .dirBody { padding:44px 12px 14px; text-align:center; }
+  .dirName { font-weight:600; font-size:15px; color:#222; }
+  .dirTitle { font-size:13px; color:#444; margin:2px 0; }
+  .dirMeta { font-size:12px; color:#777; margin-bottom:10px; }
+  .dirBtns { display:flex; justify-content:center; gap:10px; }
+  .dirBtns a { width:34px; height:34px; border-radius:50%; background:#f0f3f8; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:15px; }
+</style>
+<div class="dirGrid">
+  {{#each data.items}}
+  <div class="dirCard">
+    <div class="dirBand">
+      {{#if RefinableString08}}
+        <img class="dirAvatar" src="{{RefinableString08}}" />
+      {{else}}
+        <div class="dirAvatar">{{getInitials Title RefinableString01}}</div>
+      {{/if}}
+    </div>
+    <div class="dirBody">
+      <div class="dirName">{{Title}} {{RefinableString01}}</div>
+      <div class="dirTitle">{{RefinableString03}}</div>
+      <div class="dirMeta">{{RefinableString02}} &bull; {{RefinableString07}}</div>
+      <div class="dirBtns">
+        <a href="https://teams.microsoft.com/l/chat/0/0?users={{RefinableString04}}" title="Teams chat">&#128172;</a>
+        <a href="tel:{{RefinableString05}}" title="Call">&#128222;</a>
+        <a href="mailto:{{RefinableString04}}" title="Email">&#9993;</a>
+      </div>
+    </div>
   </div>
   {{/each}}
 </div>
