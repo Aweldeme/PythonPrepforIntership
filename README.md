@@ -574,7 +574,7 @@
   .dirGrid { display:flex; flex-wrap:wrap; gap:16px; }
   .dirCard { width:240px; border:1px solid #e1e1e1; border-radius:10px; overflow:hidden; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.08); font-family:'Segoe UI',sans-serif; }
   .dirBand { height:56px; background:#1b3a6b; position:relative; }
-  .dirAvatar { width:72px; height:72px; border-radius:50%; border:3px solid #fff; position:absolute; left:50%; top:20px; transform:translateX(-50%); object-fit:cover; background:#1b3a6b; color:#fff; font-size:24px; font-weight:600; display:flex; align-items:center; justify-content:center; }
+  .dirAvatar { width:72px; height:72px; border-radius:50%; border:3px solid #fff; position:absolute; left:50%; top:20px; transform:translateX(-50%); object-fit:cover; background:#1b3a6b; }
   .dirBody { padding:44px 12px 14px; text-align:center; }
   .dirName { font-weight:600; font-size:15px; color:#222; }
   .dirTitle { font-size:13px; color:#444; margin:2px 0; }
@@ -586,11 +586,7 @@
   {{#each data.items}}
   <div class="dirCard">
     <div class="dirBand">
-      {{#if RefinableString08}}
-        <img class="dirAvatar" src="{{RefinableString08}}" />
-      {{else}}
-        <div class="dirAvatar">{{getInitials Title RefinableString01}}</div>
-      {{/if}}
+      <img class="dirAvatar" src="{{RefinableString08}}" />
     </div>
     <div class="dirBody">
       <div class="dirName">{{Title}} {{RefinableString01}}</div>
@@ -605,6 +601,5 @@
   </div>
   {{/each}}
 </div>
-
 
 
