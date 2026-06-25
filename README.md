@@ -558,4 +558,15 @@
     ]
   }
 }
---
+------Html handlebar version-----
+<div style="display:flex; flex-wrap:wrap; gap:12px;">
+  {{#each items as |item|}}
+  <div style="border:1px solid #ccc; border-radius:8px; padding:12px; width:220px;">
+    <div style="font-weight:600;">{{item.Title}} {{item.RefinableString01}}</div>
+    <div>{{item.RefinableString03}}</div>
+    <div>{{item.RefinableString02}} &bull; {{item.RefinableString07}}</div>
+    <div style="font-size:12px; color:#666;">{{item.RefinableString04}}</div>
+  </div>
+  {{/each}}
+</div>
+
