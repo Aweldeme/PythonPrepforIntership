@@ -573,29 +573,35 @@
 <style>
   .dirGrid { display:flex; flex-wrap:wrap; gap:16px; }
   .dirCard { width:240px; border:1px solid #e1e1e1; border-radius:10px; overflow:hidden; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.08); font-family:'Segoe UI',sans-serif; }
-  .dirBand { height:56px; background:#1b3a6b; position:relative; }
-  .dirAvatar { width:72px; height:72px; border-radius:50%; border:3px solid #fff; position:absolute; left:50%; top:20px; transform:translateX(-50%); object-fit:cover; background:#1b3a6b; }
-  .dirBody { padding:44px 12px 14px; text-align:center; }
+  .dirBand { height:84px; background:#1b3a6b; display:flex; align-items:center; justify-content:center; }
+  .dirAvatar { width:72px; height:72px; border-radius:50%; border:3px solid #fff; object-fit:cover; }
+  .dirInitials { width:72px; height:72px; border-radius:50%; border:3px solid #fff; background:#5b7aa8; color:#fff; font-size:26px; font-weight:600; display:flex; align-items:center; justify-content:center; text-transform:uppercase; }
+  .dirBody { padding:12px; text-align:center; }
   .dirName { font-weight:600; font-size:15px; color:#222; }
   .dirTitle { font-size:13px; color:#444; margin:2px 0; }
-  .dirMeta { font-size:12px; color:#777; margin-bottom:10px; }
+  .dirMeta { font-size:12px; color:#777; margin-bottom:12px; }
   .dirBtns { display:flex; justify-content:center; gap:10px; }
-  .dirBtns a { width:34px; height:34px; border-radius:50%; background:#f0f3f8; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:15px; }
+  .dirBtns a { width:34px; height:34px; border-radius:50%; background:#1b3a6b; display:flex; align-items:center; justify-content:center; }
+  .dirBtns svg { width:17px; height:17px; fill:#fff; }
 </style>
 <div class="dirGrid">
   {{#each data.items}}
   <div class="dirCard">
     <div class="dirBand">
-      <img class="dirAvatar" src="{{RefinableString08}}" />
+      {{#if RefinableString08}}
+        <img class="dirAvatar" src="{{RefinableString08}}" />
+      {{else}}
+        <div class="dirInitials">{{slice Title 0 1}}{{slice RefinableString01 0 1}}</div>
+      {{/if}}
     </div>
     <div class="dirBody">
       <div class="dirName">{{Title}} {{RefinableString01}}</div>
       <div class="dirTitle">{{RefinableString03}}</div>
       <div class="dirMeta">{{RefinableString02}} &bull; {{RefinableString07}}</div>
       <div class="dirBtns">
-        <a href="https://teams.microsoft.com/l/chat/0/0?users={{RefinableString04}}" title="Teams chat">&#128172;</a>
-        <a href="tel:{{RefinableString05}}" title="Call">&#128222;</a>
-        <a href="mailto:{{RefinableString04}}" title="Email">&#9993;</a>
+        <a href="https://teams.microsoft.com/l/chat/0/0?users={{RefinableString04}}" title="Teams chat"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></a>
+        <a href="tel:{{RefinableString05}}" title="Call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+        <a href="mailto:{{RefinableString04}}" title="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
       </div>
     </div>
   </div>
